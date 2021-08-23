@@ -50,12 +50,12 @@ $(function(){
             "width": parseInt(circle.height()) + amount + "px",
             "height": parseInt(circle.height()) + amount + "px",
             "top": parseInt(circle.css("top")) - Math.floor(0.5 * amount) + "px",
-          
+
         });
     }
 
-    function hide(evt){ $(this).hide();} 
-    
+    function hide(evt){ $(this).hide();}
+
     function changeOpacity(evt) {
         opacityTimer = setInterval((evt) => { $(this).css("opacity", parseFloat($(this).css("opacity")) - 0.05);}, 250);
     }
@@ -64,7 +64,7 @@ $(function(){
         clearInterval(opacityTimer);
         $(this).css("opacity","1");
     }
-  
+
 });
 // var randomColer= "#"+((1<<24)*Math.random()|0).toString(16);
 // document.querySelector(".circle").addEventListener("click", function(){
